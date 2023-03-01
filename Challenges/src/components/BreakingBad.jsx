@@ -1,5 +1,6 @@
 import '../App.css'
-import { useCounter, useFetch } from '../'
+import { useCounter } from '../Hooks/useCounter'
+import { useFetch } from '../Hooks/useFetch'
 
 export const BreakingBad = () => {
 
