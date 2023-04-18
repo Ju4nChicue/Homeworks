@@ -1,6 +1,6 @@
 import { Child1 } from "./Child1";
 import { Child2 } from "./Child2";
-import { UserProvider } from "../../context/UserProvider";
+import { UserProvider } from "../context/UserProvider";
 
 
 export const Parent = () => {
