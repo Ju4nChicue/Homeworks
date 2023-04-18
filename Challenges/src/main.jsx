@@ -13,13 +13,20 @@ const [componets, setComponents] = useState([])**/
 
 //Redux
 import { Provider } from 'react-redux'
+import { store } from './Challenge13/store/store'
+import { App } from './Challenge13/components/App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <MainApp />
-  </React.StrictMode>
+  // <React.StrictMode>
+  //   <MainApp />
+  // </React.StrictMode>
   // <BrowserRouter>
   //   <MainApp />
   // </BrowserRouter>
+
+  //Redux
+  <Provider store={store}>
+    <App />
+  </Provider>
 
 )
