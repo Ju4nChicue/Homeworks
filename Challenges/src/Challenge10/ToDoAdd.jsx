@@ -1,30 +1,31 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export const ToDoAdd = ({ onNewToDo }) => {
-	
-	const [description, setDescription] = useState("");
+	const [description, setDescription] = useState('');
 
 	const addDescription = (e) => {
 		setDescription(e.target.value);
 	};
 
-    const onFormSubmit = ( event ) => {
-        event.preventDefault();
-        
-        const newToDo = {
-            id: new Date().getTime(),
-            description: description,
-            done: false,
-        }
+	const onFormSubmit = (event) => {
+		event.preventDefault();
 
-        onNewToDo( newToDo );
+		if (description == '') {
+			const newToDo = {
+				id: new Date().getTime(),
+				description: description,
+				done: false,
+			};
 
-		setDescription('');
-    }
+			onNewToDo(newToDo);
+
+			setDescription('');
+		}
+	};
 
 	return (
 		<>
-			<form onSubmit={ (event) => onFormSubmit(event)}>
+			<form onSubmit={(event) => onFormSubmit(event)}>
 				<input
 					type='text'
 					className='form-control'
