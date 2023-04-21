@@ -1,7 +1,7 @@
-import { ToDoReducer } from './ToDoReducer';
+import { ToDoReducer } from '../Reducers/ToDoReducer';
 import { ToDoList } from './ToDoList';
 import { ToDoAdd } from './ToDoAdd';
-import { useToDo } from './useToDo';
+import { useToDo } from '../Hooks/useToDo';
 
 const initialState = []
 
