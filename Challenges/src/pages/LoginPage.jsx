@@ -13,7 +13,7 @@ export const LoginPage = () => {
 									className='form'
 									role='form'
 									autocomplete='off'>
-									<div className='form-group'>
+									<div className='form-group mb-4'>
 										<label for='correo'>Correo Electrónico</label>
 										<input
 											type='text'
@@ -23,7 +23,7 @@ export const LoginPage = () => {
 											required=''
 										/>
 									</div>
-									<div className='form-group'>
+									<div className='form-group mb-4'>
 										<label>Contraseña</label>
 										<input
 											type='password'

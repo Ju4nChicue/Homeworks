@@ -1,16 +1,13 @@
 import {
-	Link,
 	Navigate,
-	NavLink,
 	Route,
 	Routes,
 	BrowserRouter as Router,
 } from 'react-router-dom';
 
-import { AboutPage } from '../pages/AboutPage';
-import { HomePage } from '../pages/HomePage';
-import { LoginPage } from '../pages/LoginPage';
-//import { NotFoundPage } from './NotFoundPage';
+import { AboutPage } from './AboutPage';
+import { HomePage } from './HomePage';
+import { LoginPage } from './LoginPage';
 import { NavComponent } from '../components/NavComponent';
 
 export const MainApp = () => {
@@ -23,8 +20,6 @@ export const MainApp = () => {
 					<Route path="/about" element={<AboutPage />} />
 					<Route path="/login" element={<LoginPage />} />
 					<Route path="*" element={<Navigate to="/" />} />
-					{/* <Route path="*" element={<LoginPage />} /> */}
-
 				</Routes>
 			</Router>
 		</>
