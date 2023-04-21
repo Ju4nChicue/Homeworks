@@ -1,4 +1,11 @@
+import React from 'react';
+import { useUser } from '../hooks/useUser';
+
 export const LoginPage = () => {
+
+	const { setUser, setLogged, handleName, handlePassword, onLogin } = useUser()
+
+
 	return (
 		<>
 			<div className='container my-5'>
@@ -10,26 +17,29 @@ export const LoginPage = () => {
 							</div>
 							<div className='card-body'>
 								<form
+									onSubmit={(event) => onLogin(event)}
 									className='form'
 									role='form'
-									autocomplete='off'>
-									<div className='form-group'>
-										<label for='correo'>Correo Electrónico</label>
+									>
+									<div className='form-group mb-4'>
+										<label>Usuario</label>
 										<input
 											type='text'
 											className='form-control form-control-lg rounded-0'
 											name='correo'
 											id='correo'
 											required=''
+											onChange={handleName}
 										/>
 									</div>
-									<div className='form-group'>
+									<div className='form-group mb-4'>
 										<label>Contraseña</label>
 										<input
 											type='password'
 											className='form-control form-control-lg rounded-0'
 											id='password'
 											required=''
+											onChange={handlePassword}
 										/>
 									</div>
 									<button

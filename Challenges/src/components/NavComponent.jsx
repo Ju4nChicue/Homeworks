@@ -15,12 +15,12 @@ export const NavComponent = () => {
 
 	return (
 		<>
-			<div className='mb-4'>
+			<div className='mb-5'>
 				<nav className='navbar navbar-expand-sm navbar-dark bg-dark fixed-top'>
 					<Link
 						className='navbar-brand px-4'
 						to='/'>
-						Challenge 11
+						Challenge 12
 					</Link>
 
 					<div className='navbar-collapse'>

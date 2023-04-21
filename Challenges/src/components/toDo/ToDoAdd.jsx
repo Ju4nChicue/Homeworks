@@ -10,7 +10,7 @@ export const ToDoAdd = ({ onNewToDo }) => {
 	const onFormSubmit = (event) => {
 		event.preventDefault();
 
-		if (description == '') {
+		if (description != '') {
 			const newToDo = {
 				id: new Date().getTime(),
 				description: description,
