@@ -20,15 +20,15 @@ export const App = () => {
 		<>
 			<h1> App </h1>
 			<hr />
-			<span> Counter is: {counter} </span>
-			<div>
+			<h3> Counter is: {counter} </h3>
+			<div className='mt-3'>
 				<button
-					className='btn btn-primary'
+					className='btn btn-primary mx-3'
 					onClick={() => dispatch(increment())}>
 					+1
 				</button>
 				<button
-					className='btn btn-primary'
+					className='btn btn-primary me-3'
 					onClick={() => dispatch(decrement())}>
 					-1
 				</button>

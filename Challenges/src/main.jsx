@@ -1,32 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import Home from './home'
-//import './reducer/intro-reducer'
-import { BrowserRouter } from 'react-router-dom'
-//import { MainApp } from './Challenge11/pages/MainApp'
-//import { MainApp } from './Segments-Query_Params/pages/MainApp'
-import { MainApp } from './Challenge12/pages/MainApp'
-
-/**const [page, setPage] = setState( value )
-const [componets, setComponents] = useState([])**/
-
-//Redux
-import { Provider } from 'react-redux'
-import { store } from './Challenge13/store/store'
-import { App } from './Challenge13/components/App'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
+import { App } from './components/App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
-  //   <MainApp />
-  // </React.StrictMode>
-  // <BrowserRouter>
-  //   <MainApp />
-  // </BrowserRouter>
-
-  //Redux
-  <Provider store={store}>
-    <App />
-  </Provider>
-
-)
+	<Provider store={store}>
+		<App />
+	</Provider>
+);
