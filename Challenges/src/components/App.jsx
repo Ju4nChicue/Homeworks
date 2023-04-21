@@ -18,7 +18,7 @@ export const App = () => {
 
 	return (
 		<>
-			<h1> App </h1>
+			<h1> Challenge 13 </h1>
 			<hr />
 			<h3> Counter is: {counter} </h3>
 			<div className='mt-3'>
